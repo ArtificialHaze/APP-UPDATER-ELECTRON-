@@ -1,0 +1,59 @@
+{
+  "name": "my-electron",
+  "productName": "My Electron App",
+  "version": "1.0.0",
+  "description": "My Electron application description",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "echo \"No linting configured\"",
+    "dist": "electron-builder"
+  },
+  "keywords": [],
+  "author": "Artificial",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.2.2",
+    "electron-builder": "^23.6.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "electron-updater": "^5.3.0",
+    "get-youtube-channel-id": "^0.0.4",
+    "jquery": "^3.6.3",
+    "jsmediatags": "^3.9.7",
+    "menubar": "^9.3.0",
+    "mouse": "^0.0.1",
+    "promise-mysql": "^5.2.0",
+    "randomstring": "^1.2.3",
+    "resize-img": "^2.0.0",
+    "toastify-js": "^1.12.0",
+    "virtualbox": "^1.1.2",
+    "watchify": "^4.0.0",
+    "webpack": "^5.75.0"
+  },
+  "repository": "https://[YOUR_GITHUB_REPOSITORY]",
+  "publish": {
+    "provider": "github",
+    "releaseType": "release"
+  },
+  "build": {
+    "appId": "com.dreamdevs.autoupdater",
+    "productName": "AutoUpdater",
+    "win": {
+      "target": "nsis"
+    },
+    "directories": {
+      "output": "dist"
+    }
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.4",
+    "@electron-forge/maker-deb": "^6.0.4",
+    "@electron-forge/maker-rpm": "^6.0.4",
+    "@electron-forge/maker-squirrel": "^6.0.4",
+    "@electron-forge/maker-zip": "^6.0.4",
+    "electron": "22.0.2"
+  }
+}
